@@ -2,12 +2,12 @@ import streamlit as st
 from engine import get_nim_value, find_best_move
 
 # Configure the look of the web page
-st.set_page_config(page_title="Math AI: Nim Solver", page_icon="🎲", layout="centered")
+st.set_page_config(page_title="Math Engine: Nim Solver", page_icon="🎲", layout="centered")
 
 # --- HEADER SECTION ---
 st.title("🎲 Combinatorial Game Theory Solver")
 st.markdown("""
-This AI engine evaluates mathematical game states using the **Minimum Excludant (Mex)** property 
+This engine evaluates mathematical game states using the **Minimum Excludant (Mex)** property 
 and **Dynamic Programming (Memoization)**. 
 * Currently configured for a standard **3-Heap Game of Nim**.
 """)
@@ -55,7 +55,7 @@ else:
 st.divider()
 
 # --- INTERACTIVE AI BOT OPPONENT ---
-st.subheader("🤖 Ask the Math AI Engine for the Perfect Move")
+st.subheader("🤖 Ask the Math Engine for the Perfect Move")
 st.write("Click the button below to have the backend engine look ahead and calculate the perfect game-theoretic move.")
 
 if st.button("Calculate Optimal Move"):
